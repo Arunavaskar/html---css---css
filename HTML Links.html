@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Links</title>
   </head>
-  <body>
+  <body id="top">
     <h3>Links are defining feature of the web <br>
       because they allow you to move from one page to another - <br>
       enabling the very idea of browsing or surfing.
@@ -31,7 +31,7 @@
 
       <hr>
 
-      <h1>Linking to other sites</h1>
+      <h1 id="Linking_to_other_sites">Linking to other sites</h1>
       <h2>"< a >"</h2>
       <p>As we discussed previously, a for anchor tag is used to create a link where the link for the site is going <br>
         be in the href attribute. <br>
@@ -41,9 +41,9 @@
         Like:- <a href="http://www.facebook.com">facebook</a>
       </p>
 
-      <br>
+      <hr>
 
-      <h1>Linking to other pages on the same site</h1>
+      <h1 id="Linking_to_other_pages_on_the_same_site">Linking to other pages on the same site</h1>
       <h2>"< a >"</h2>
       <p>When you are linking a to other site that are on the same site, you don't need to use <br>
         the full domain name of the site, instead you can just use <strong>relative</strong> URL. <br> <br>
@@ -58,9 +58,9 @@
         <a href="HTML List.html">HTML List.html</a>. when you click on this link, you will be direcvted to the site that is on the same folder.
       </p>
 
-      <br>
+      <hr>
 
-      <h1>Email links</h1>
+      <h1 id="Email_links">Email links</h1>
       <h2>mailto:</h2>
       <p>To create a link that starts up the user's mail service app to send a mail to someone specific, <br>
         you need to use malito: in the start of the href attribute value and then it is followed by the the email adress that you want to <br>
@@ -71,9 +71,9 @@
         in that href attribute.
       </p>
 
-      <br>
+      <hr>
 
-      <h1>Opening links in a new window</h1>
+      <h1 id="Opening_links_in_a_new_window">Opening links in a new window</h1>
       <h2>target</h2>
       <p>If you want to open the link to a new window, you can use this target="_blank" after adding the link in a quote as a value to the  href attribute in the < a > tag. <br>
         One of the major reasons a web page author might want a link to be opened is simply because <br>
@@ -83,6 +83,40 @@
 
         Like:- <a href="HTML Structure.html" target="_blank">HTML structure</a>(Opens in a new window) <br>
         <strong><em>*you are highly advised to inspect this example link element above by right clicking on it and selecting inspect element for better understanding oohow this code works!</em></strong>
+      </p>
+
+      <hr>
+
+      <h1>Linking to a specific part of a same page</h1>
+      <p>At the top of a page you might want to add a list of contents that the user might find throught out the page. <br>
+        Now if that list items could actually be clikable links that would move the page to that specific part of the content <br>
+        in that page??!! Or for a different scenario there is a button at the bottom of the page that states "got to the top" so that <br>
+        when the user clicks the button or the link, the page just moves to the top of it??!!! <br> <br>
+        This is why this idea of linking a specific part of a same page is valuable! <br> <br>
+
+        Like:- <br>
+      Table of content <br>
+      </p>
+      <ol>
+        <li><a href="#Linking_to_other_sites">Linking to other sites</a></li>
+        <li><a href="#Linking_to_other_pages_on_the_same_site">Linking to other pages on the same site</a></li>
+        <li><a href="#Email_links">Email links</a></li>
+        <li><a href="#Opening_links_in_a_new_window">Opening links in a new window</a></li>
+      </ol> <br> <br>
+
+      <p><a href="#top">Go to top</a></p>
+      <p><strong><em>*you are highly advised to inspect this example above by right clicking on it and selecting inspect element for better understanding on how this code works!</em></strong></p>
+
+      <hr>
+
+      <h1>Linking to a specific part of another page</h1>
+      <p>If you want to link to specific part of a different site, you can use the same technique. <br>
+        You have to make sure that the part of that different site that you want tp link needs to have a id. <br> <br>
+
+        Like:-
+        Here i will be linking my faceboook profile portion of facebook.
+
+        <a href="https://bitly.com/ #custom_html-2">google search result for html, specifically mozilla dev site</a>
       </p>
   </body>
 </html>
