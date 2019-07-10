@@ -35,7 +35,8 @@
    <h2>"< ol >"</h2>
    <p>The Ordered list is created with this element <br>
      Sometimes you will see type of attribute used with the ol element to specify the type numbering like <br>
-     numbers, letters or romans. It is better to use CSS list-style-type property covered on <a href="#">page SOMETHING.</a> <br>
+     numbers, letters or romans. It is better to use CSS list-style-type property covered on <a href="#">page SOMETHING.</a> <br> <br>
+
      Like:- <ol>
        <li>oredered list 1</li>
        <li>ordered list 2</li>
@@ -48,7 +49,8 @@
    <h2>"< ul >"</h2>
    <p>This element is used to create unordered list. <br>
      Sometimes you will see type of attribute used with the ol element to specify the type numbering like <br>
-     numbers, letters or romans. It is better to use CSS list-style-type property covered on <a href="#">page SOMETHING.</a> <br>
+     numbers, letters or romans. It is better to use CSS list-style-type property covered on <a href="#">page SOMETHING.</a> <br> <br>
+
      Like:- <ul>
        <li>unoredered list 1</li>
        <li>unordered list 2</li>
@@ -76,7 +78,7 @@
    <p>   This element is used to contain the definition.
    </p>
    <p>   Sometimes you might see two terms containing one or more definitions or <br>
-         one term containing more than one definition. <br>
+         one term containing more than one definition. <br> <br>
          <!-- definition lists -->
          Like:- <dl class="">
 
@@ -87,6 +89,7 @@
 
            <!-- definition data -->
            <dt>Term 2</dt>
+           <dt>Term 2 no.2</dt>
            <!-- definition data -->
            <dd>This is the part where the definition of the term is described! 2.0</dd>
 
@@ -94,6 +97,7 @@
            <dt>Term 3</dt>
            <!-- definition data -->
            <dd>This is the part where the definition of the term is described! 3.0</dd>
+           <dd>more than one definition to one term!</dd>
          </dl>
    </p>
 
@@ -102,7 +106,24 @@
    <h1>Nested List</h1>
    <p>You can nest another list inside a list. This called nested list. <br>
      Browsers ususally indent the nested list more than a normal list and <br>
-     for unordered lists browsers may change the bullet type to something different too.
+     for unordered lists browsers may change the bullet type to something different too. <br> <br>
+     <!-- nested list -->
+     Like:- <ol>
+       <li>ordered parent List no 1</li>
+       <li>oredered parent List no 2</li>
+       <ul>
+         <li>unoredered child list 1</li>
+         <li>unoredered child list 2</li>
+         <ul>
+           <li>unoredered child's child list 1</li>
+           <li>unoredered child's child list 2</li>
+           <ol>
+             <li>oredered child's child's child list 1</li>
+             <li>oredered child's child's child list 2</li>
+           </ol>
+         </ul>
+       </ul>
+     </ol>
   </p>
   </body>
 </html>
