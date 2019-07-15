@@ -97,7 +97,7 @@
    heading is for a col. <br> <br>
 
    browsers normaly display content of a th element in bold and in the middle of a cell. <br> <br>
-
+</p>
    Like:- <br>
    <table>
      <tr>
@@ -129,8 +129,10 @@
        <td>Racing</td>
      </tr>
    </table>
-   <p>Lets Look at another example...</p>
-   <p>This is a table representing a financial staus of something..(Don't bother trying to know what it is about. it's just a table.)</p>
+   <p>Lets Look at another example...
+   </p>
+   <p>This is a table representing a financial staus of something..(Don't bother trying to know what it is about. it's just a table.)
+   </p>
    <table>
      <tr>
        <th scope="row"></th>
@@ -210,7 +212,7 @@
    <hr>
 
    <h1>Spanning Columns</h1>
-   <h2>Columns Attribute</h2>
+   <h2>colspan</h2>
    <p>Sometimes you need the entries <br>
      in a table to stretch across more than one column. <br> <br>
 
@@ -240,7 +242,50 @@
      </table>
      <strong><em>*you are highly advised to inspect this example link element above by right clicking on it and selecting inspect element for better understanding oohow this code works!</em></strong>
 
+     <br> <br>
+
+     Here colspan attribute has a value of 2 for movie, <br>
+     3 for work and 1 for food outing which states that <br>
+     each of those td element's data is going to have 2, 3, 1 <br>
+     columns reserved respectively. <br> <br>
+
+     some CSS samples to this example can be found <a href="#">here</a>.
+
+     <hr>
+
+     <h1>Spanning Rows</h1>
+     <h2>rowspan</h2>
+     <p>You also need entries in a table to stretch down across <br>
+       more than one rows. <br> <br>
+
+       The rowspan attribute defines how much rows a tablle data <br>
+       can have. <br> <br>
+
+       Like:-
+       <table border="10">
+         <tr>
+           <th></th>
+           <th scope="row" rowspan="3">Monday</th>
+           <th scope="row" rowspan="2">Tuesday</th>
+           <th scope="row" rowspan="4">Thursday</th>
+         </tr>
+         <tr>
+           <th scope="col">movie</th>
+
+         </tr>
+         <tr>
+           <th scope="col">work</th>
+
+         </tr>
+         <tr>
+           <th scope="col" >food outing</th>
+           
+         </tr>
+       </table>
+       <strong><em>*you are highly advised to inspect this example link element above by right clicking on it and selecting inspect element for better understanding oohow this code works!</em></strong>
+
+     </p>
    </p>
-</p>
+
   </body>
 </html>
