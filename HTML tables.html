@@ -294,18 +294,38 @@
      </p>
 
 
-<h1>Long Tables</h1>
-<p>There are basically three elements that help distinguish between the <br>
-  main content of the table and first and the last row of the table.(which <br>
-  can contain different content.)
-</p>
-<h2>< thead ></h2>
-<p>The headings of the table should sit inside this element.</p>
+    <h1>Long Tables</h1>
+    <p>There are basically three elements that help distinguish between the <br>
+      main content of the table and first and the last row of the table.(which <br>
+      can contain different content.)
+    </p>
+    <h2>< thead ></h2>
+    <p>The headings of the table should sit inside this element.</p>
 
-<h2>< tbody ></h2>
-<p>The body of the table will go in this element.</p>
+    <h2>< tbody ></h2>
+    <p>The body of the table will go in this element.</p>
 
-<h2>< tfoot ></h2>
-<p>Footer section of the table will go into this element.</p>
+    <h2>< tfoot ></h2>
+    <p>Footer section of the table will go into this element.</p>
+    <p>By default browsers rarely treat the content of these elements any differently <br>
+      from other elements, however desginers often use CSS styles to change their looks. <br> <br>
+
+      The reason for separating < thead > and < tfoot > is because if you have a long <br>
+      table to display on your browser and the table is actually longer than your display <br>
+      the browser will keep the header and footer portion of the table on the screen while <br>
+      scrolling through the table's body. <br> <br>
+
+      This helps users to keep track of what kind of data they are looking at while scrolling <br>
+      through the body of the table data as the header and the footer is always there with <br>
+      proper explanation. <br> <br>
+
+      I have CSS styles to this example so thaar you can see the contents of the < thead > <br>
+      and < tfoot > being treated differently than the rest of the rows in a table. Example is <br>
+      <a href="#">here</a>.
+    </p>
+
+    <hr>
+
+    <h1>Old Code: Width Spacing</h1>
   </body>
 </html>
