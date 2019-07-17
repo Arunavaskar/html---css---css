@@ -496,7 +496,7 @@
       <hr>
 
       <h2>cellpadding</h2>
-      <p>This aattribute is used to add space between each cell of a table.</p> <br> <br>
+      <p>This aattribute is used to add space <em>inside</em> each cell of a table.</p> <br> <br>
 
       like:- <br>
       <h2>BEFORE</h2>
@@ -655,8 +655,180 @@
       <strong><em>*you are highly advised to inspect this example link element above by right clicking on it and selecting inspect element for better understanding oohow this code works!</em></strong>
       <br>
       <p>Here in the second example, cellpadding attribute was used to <br>
-        determine spaces between each cell of the table by giving the attribute the value of 10 pixels.
+        determine spaces <em>Inside</em> each cell of the table by giving the attribute the value of 10 pixels.
       </p>
 
+      <hr>
+
+      <h2>cellspacing</h2>
+      <p>This attribute is used to add spacing <em>between</em> each cell of a table.</p> <br> <br>
+
+      like:- <br>
+      <h2>BEFORE</h2>
+      <table width = "400" cellpadding = 10>
+        <tr>
+          <th scope="row"></th>
+          <th scope="row">Expenses</th>
+          <th scope="row">Loses</th>
+          <th scope="row">balance</th>
+        </tr>
+        <tr>
+          <th scope="col">Jan</th>
+          <td>1000K</td>
+          <td>50%</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <th scope="col">Feb</th>
+          <td>2000K</td>
+          <td>20%</td>
+          <td>200</td>
+        </tr>
+        <tr>
+          <th scope="col">Mar</th>
+          <td>100K</td>
+          <td>10%</td>
+          <td>600</td>
+        </tr>
+        <tr>
+          <th scope="col">Aprl</th>
+          <td>500K</td>
+          <td>21%</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <th scope="col">May</th>
+          <td>600K</td>
+          <td>98%</td>
+          <td>5000</td>
+        </tr>
+        <tr>
+          <th scope="col">Jun</th>
+          <td>700K</td>
+          <td>12%</td>
+          <td>600</td>
+        </tr>
+        <tr>
+          <th scope="col">Jul</th>
+          <td>8000K</td>
+          <td>30%</td>
+          <td>700</td>
+        </tr>
+        <tr>
+          <th scope="col">Aug</th>
+          <td>10000K</td>
+          <td>32%</td>
+          <td>800</td>
+        </tr>
+        <tr>
+          <th scope="col">Sep</th>
+          <td>1000K</td>
+          <td>45%</td>
+          <td>9000</td>
+        </tr>
+        <tr>
+          <th scope="col">Nov</th>
+          <td>5000K</td>
+          <td>90%</td>
+          <td>100000</td>
+        </tr>
+        <tr>
+          <th scope="col">Dec</th>
+          <td>10000K</td>
+          <td>80%</td>
+          <td>9005</td>
+        </tr>
+      </table> <br> <br>
+      <br> <br>
+
+      <h2>AFTER</h2>
+      <table width = "400" cellpadding = 10 cellspacing = 5>
+        <tr>
+          <th scope="row"></th>
+          <th scope="row">Expenses</th>
+          <th scope="row">Loses</th>
+          <th scope="row">balance</th>
+        </tr>
+        <tr>
+          <th scope="col">Jan</th>
+          <td>1000K</td>
+          <td>50%</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <th scope="col">Feb</th>
+          <td>2000K</td>
+          <td>20%</td>
+          <td>200</td>
+        </tr>
+        <tr>
+          <th scope="col">Mar</th>
+          <td>100K</td>
+          <td>10%</td>
+          <td>600</td>
+        </tr>
+        <tr>
+          <th scope="col">Aprl</th>
+          <td>500K</td>
+          <td>21%</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <th scope="col">May</th>
+          <td>600K</td>
+          <td>98%</td>
+          <td>5000</td>
+        </tr>
+        <tr>
+          <th scope="col">Jun</th>
+          <td>700K</td>
+          <td>12%</td>
+          <td>600</td>
+        </tr>
+        <tr>
+          <th scope="col">Jul</th>
+          <td>8000K</td>
+          <td>30%</td>
+          <td>700</td>
+        </tr>
+        <tr>
+          <th scope="col">Aug</th>
+          <td>10000K</td>
+          <td>32%</td>
+          <td>800</td>
+        </tr>
+        <tr>
+          <th scope="col">Sep</th>
+          <td>1000K</td>
+          <td>45%</td>
+          <td>9000</td>
+        </tr>
+        <tr>
+          <th scope="col">Nov</th>
+          <td>5000K</td>
+          <td>90%</td>
+          <td>100000</td>
+        </tr>
+        <tr>
+          <th scope="col">Dec</th>
+          <td>10000K</td>
+          <td>80%</td>
+          <td>9005</td>
+        </tr>
+      </table> <br> <br>
+
+      <strong><em>*you are highly advised to inspect this example link element above by right clicking on it and selecting inspect element for better understanding oohow this code works!</em></strong>
+      <br>
+      <p>Here in this example cellspacing is used with the value of 5 pixels to determine <br>
+        the spacing <em>between</em> each cell of this table.
+      </p>
+
+      <hr>
+      <hr>
+
+      <h2>These days developers prefer to use CSS <br>
+        to style these spacings. width and padding rather than <br>
+        these Old HTML codes. You can find the CSS example to this <a href="#">here</a>.
+      </h2>
   </body>
 </html>
