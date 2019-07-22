@@ -217,49 +217,63 @@
 <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
 
-<h1>Form Structure</h1>
+    <h1>Form Structure</h1>
 
-<h2>< form ></h2>
-<p>
-  Form controls live inside a element. This element should always carry the action attribute and will usually have a method and id attribute too.
-</p>
+    <h2>< form ></h2>
+    <p>
+      Form controls live inside a element. This element should always carry the action attribute and will usually have a method and id attribute too.
+    </p>
 
-<h2>action</h2>
-<p>
-  Every element requires an action attribute. Its value is the URL for the page on the server that will receive the information in the form when it is submitted.
-</p>
+    <h2>action</h2>
+    <p>
+      Every element requires an action attribute. Its value is the URL for the page on the server that will receive the information in the form when it is submitted.
+    </p>
 
-<h2>method</h2>
-<p>
-  Forms can be sent using one of two methods: get or post.
-</p>
-<p>
-  With the get method, the values from the form are added to the end of the URL specified in the action attribute. The get method is ideal for:
-</p>
+    <h2>method</h2>
+    <p>
+      Forms can be sent using one of two methods: get or post.
+    </p>
+    <p>
+      With the get method, the values from the form are added to the end of the URL specified in the action attribute. The get method is ideal for:
+    </p>
 
-<ul>
-  <li>
-    short forms (such as search boxes)
-  </li>
-  <li>
-    when you are just retrieving data from the web server (not sending information that should be added to or deleted from a database)
-    This is where the form controls will appear. <br>
-    HTML Form Structure With the post method the values are sent in what are known as HTTP headers. <br>
-    As a rule of thumb you should use the post method if your form:
-  </li>
-</ul>
+    <ul>
+      <li>
+        short forms (such as search boxes)
+      </li>
+      <li>
+        when you are just retrieving data from the web server (not sending information that should be added to or deleted from a database) <br>
+        This is where the form controls will appear. <br>
+        HTML Form Structure With the post method the values are sent in what are known as HTTP headers. <br>
+        As a rule of thumb you should use the post method if your form:
+      </li>
+    </ul>
 
-<ul>
-  <li>allows users to upload a file</li>
-  <li>is very long</li>
-  <li>contains sensitive data (e.g. passwords)</li>
-  <li>adds information to, or deletes information from, a database If the method attribute is not used, the form data will be sent using the get method.</li>
-</ul>
+    <ul>
+      <li>
+        allows users to upload a file
+      </li>
+      <li>
+        is very long
+      </li>
+      <li>
+        contains sensitive data (e.g. passwords)
+      </li>
+      <li>
+        adds information to, or deletes information from, a database If the method attribute is not used, <br>
+        the form data will be sent using the get method.
+      </li>
+    </ul>
 
-<h2>id</h2>
-<p>
-  We look at the id attribute on page 183, but the value is used to identify the form distinctly from other elements on the page <br>
-  (and is often used by scripts - such as those that check you have entered information into fields that require values).
-</p>
+    <h2>id</h2>
+    <p>
+      We look at the id attribute on page 183, but the value is used to identify the form distinctly from other elements on the page <br>
+      (and is often used by scripts - such as those that check you have entered information into fields that require values).
+    </p>
+
+
+<hr>
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
   </body>
 </html>
