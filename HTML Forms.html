@@ -770,8 +770,113 @@
 <hr>
 <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
+    <h1>BUTTON & HIDDEN CONTROLS</h1>
+    <h2>< button ></h2>
+    <p>
+      The < button > element was<br />
+      introduced to allow users more<br />
+      control over how their buttons<br />
+      appear, and to allow other<br />
+      elements to appear inside the<br />
+      button.<br />
+      This means that you can<br />
+      combine text and images<br />
+      between the opening < button ><br />
+      tag and closing </ button > tag.
+    </p>
+    <h2>< input ></h2>
+    <h3>type="hidden"</h3>
+    <p>
+      This example also shows a<br />
+      hidden form control. These form<br />
+      controls are not shown on the<br />
+      page (although you can see them<br />
+      if you use the View Source option<br />
+      in the browser). They allow web<br />
+      page authors to add values to<br />
+      forms that users cannot see.<br />
+      For example, a web page author<br />
+      might use a hidden field to<br />
+      indicate which page the user was<br />
+      on when they submitted a form.
+    </p>
 
+<hr>
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
+<h1>LBELLING FORM CONTROLS</h1>
+<h2>< label ></h2>
+<p>
+  When introducing form controls,<br />
+  the code was kept simple by<br />
+  indicating the purpose of each<br />
+  one in text next to it. However,<br />
+  each form control should have<br />
+  its own < label > element as this<br />
+  makes the form accessible to<br />
+  vision-impaired users.
+</p>
+<p>
+  The < label > element can be<br />
+  used in two ways. It can:
+</p>
+<p>
+  1. Wrap around both the text<br />
+  description and the form input<br />
+  (as shown on the first line of the<br />
+  example to your right).
+</p>
+<p>2. Be kept separate from the<br />
+  form control and use the for<br />
+  attribute to indicate which form<br />
+  control it is a label for (as shown<br />
+  with the radio buttons).
+</p>
+<h3>for</h3>
+<p>
+  The for attribute states which<br />
+  form control the label belongs to.<br />
+  Note how the radio buttons use<br />
+  the id attribute. The value of the<br />
+  id attribute uniquely identifies an<br />
+  element from all other elements<br />
+  on a page. (The id attribute is<br />
+  covered on page 183.)
+</p>
+<p>The value of the for attribute<br />
+  matches that of the id attribute<br />
+  on the form control it is labelling.<br />
+  This technique using the for and id attributes can be used on any<br />
+  form control. When a < label ><br />
+  element is used with a checkbox<br />
+  or radio button, users can click<br />
+  on either the form control or the<br />
+  label to select. The expanded<br />
+  clickable area makes the form<br />
+  easier to use. The position of the<br />
+  label is very important. If users<br />
+  do not know where to enter<br />
+  information or what information<br />
+  to enter, they are less likely to<br />
+  use the form correctly.
+</p>
+<p>As a rule of thumb, here are the<br />
+  best places to place labels on<br />
+  form controls.
+</p>
+
+<p>ABOVE OR TO THE LEFT:</p>
+<ul>
+<li>Text inputs</li>
+<li>Text areas</li>
+<li>Select boxes</li>
+<li>File uploads</li>
+</ul>
+<p>TO THE RIGHT:</p>
+<ul>
+<li>Individual checkboxes</li>
+<li>Individual radio buttons</li>
+</ul>
 
   </body>
 </html>
