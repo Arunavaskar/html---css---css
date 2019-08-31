@@ -886,30 +886,96 @@
 <hr>
 <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
-<h1>GROUPING FORM ELEMENTS</h1>
-<h2>< fieldset ></h2>
-<p>
-  You can group related form<br />
-  controls together inside the<br />
-  < fieldset > element. This is<br />
-  particularly helpful for longer<br />
-  forms.
-</p>
-<p>
-  Most browsers will show the<br />
-  fieldset with a line around<br />
-  the edge to show how they are<br />
-  related. The appearance of these<br />
-  lines can be adjusted using CSS.
-</p>
-<h2>< legend ></h2>
-<p>
-  The < legend > element can<br />
-  come directly after the opening<br />
-  < fieldset > tag and contains a<br />
-  caption which helps identify the<br />
-  purpose of that group of form<br />
-  controls.
-</p>
+    <h1>GROUPING FORM ELEMENTS</h1>
+    <h2>< fieldset ></h2>
+    <p>
+      You can group related form<br />
+      controls together inside the<br />
+      < fieldset > element. This is<br />
+      particularly helpful for longer<br />
+      forms.
+    </p>
+    <p>
+      Most browsers will show the<br />
+      fieldset with a line around<br />
+      the edge to show how they are<br />
+      related. The appearance of these<br />
+      lines can be adjusted using CSS.
+    </p>
+    <h2>< legend ></h2>
+    <p>
+      The < legend > element can<br />
+      come directly after the opening<br />
+      < fieldset > tag and contains a<br />
+      caption which helps identify the<br />
+      purpose of that group of form<br />
+      controls.
+    </p>
+
+<hr>
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <h1>HTML5: FORM VALIDATION</h1>
+    <p>
+      You have probably seen forms<br />
+      on the web that give users<br />
+      messages if the form control has<br />
+      not been filled in correctly; this is<br />
+      known as <strong>form validation</strong>.
+    </p>
+    <p>
+      Traditionally, form validation<br />
+      has been performed using<br />
+      JavaScript (which is beyond the<br />
+      scope of this book). But HTML5<br />
+      is introducing validation and<br />
+      leaving the work to the browser.
+    </p>
+    <p>
+      Validation helps ensure the<br />
+      user enters information in a<br />
+      form that the server will be able<br />
+      to understand when the form<br />
+      is submitted. Validating the<br />
+      contents of the form before it is<br />
+      sent to the server the helps:
+    </p>
+      <ul>
+        <li>Reduce the amount of work<br />
+          the server has to do
+        </li>
+        <li>Enables users to see if there<br />
+          are problems with the form<br />
+          faster than if validation were<br />
+          performed on the server.
+        </li>
+      </ul>
+    <p>
+      At the time of writing, only<br />
+      Chrome and Opera supported<br />
+      HTML5 validation, although other<br />
+      browsers are expected to follow.<br />
+      In order to support older browsers<br />
+      (that do not understand HTML5),<br />
+      web page authors are likely to<br />
+      continue using JavaScript to<br />
+      validate forms.
+    </p>
+    <p>
+      An example of HTML5 form<br />
+      validation is the required<br />
+      attribute, which can be used on<br />
+      any form element that the user<br />
+      is expected to fill in. This HTML5<br />
+      attribute does not need a value,<br />
+      but in HTML 4 all attributes must<br />
+      have a value. So, some people give<br />
+      this attribute a value of required.
+    </p>
+
+<hr>
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
   </body>
 </html>
