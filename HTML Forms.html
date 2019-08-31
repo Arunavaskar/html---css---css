@@ -626,128 +626,150 @@
     </ol>
 
 <hr>
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
-<h1>MULTIPLE SELECT BOX</h1>
-<h2>< select ></h2>
-<h3>size</h3>
-<p>
-  You can turn a drop down select<br />
-  box into a box that shows more<br />
-  than one option by adding the<br />
-  size attribute. Its value should<br />
-  be the number of options you<br />
-  want to show at once. In the<br />
-  example you can see that three<br />
-  of the four options are shown.
-</p>
-<p>
-  Unfortunately, the way that<br />
-  browsers have implemented this<br />
-  attribute is not perfect, and it<br />
-  should be tested throroughly if<br />
-  used (in particular in Firefox and<br />
-  Safari on a Mac).
-</p>
 
-<h3>multiple</h3>
-<p>
-  You can allow users to select<br />
-  multiple options from this list by<br />
-  adding the multiple attribute<br />
-  with a value of multiple.
-</p>
-<h6>
-  It is a good idea to tell users if<br />
-  they can select more than one<br />
-  option at a time. It is also helpful<br />
-  to indicate that on a PC they<br />
-  should hold down the control key<br />
-  while selecting multiple options<br />
-  and on a Mac they should use<br />
-  the command key while selecting<br />
-  options.
-</h6>
+    <h1>MULTIPLE SELECT BOX</h1>
+    <h2>< select ></h2>
+    <h3>size</h3>
+    <p>
+      You can turn a drop down select<br />
+      box into a box that shows more<br />
+      than one option by adding the<br />
+      size attribute. Its value should<br />
+      be the number of options you<br />
+      want to show at once. In the<br />
+      example you can see that three<br />
+      of the four options are shown.
+    </p>
+    <p>
+      Unfortunately, the way that<br />
+      browsers have implemented this<br />
+      attribute is not perfect, and it<br />
+      should be tested throroughly if<br />
+      used (in particular in Firefox and<br />
+      Safari on a Mac).
+    </p>
 
-<hr>
-
-<h1>File Input Box</h1>
-<h2>< input ></h2>
-<p>
-  If you want to allow users to<br />
-  upload a file (for example an<br />
-  image, video, mp3, or a PDF),<br />
-  you will need to use a file input<br />
-  box.
-</p>
-<h3>type="file"</h3>
-<p>
-  This type of input creates a<br />
-  box that looks like a text input<br />
-  followed by a browse button.<br />
-  When the user clicks on the<br />
-  browse button, a window opens<br />
-  up that allows them to select a<br />
-  file from their computer to be<br />
-  uploaded to the website.
-</p>
-<p><span style="font-size: 9pt;">When you are allowing users</span><br />
-  <span style="font-size: 9pt;">to upload files, the method</span><br />
-  <span style="font-size: 9pt;">attribute on the < form > element</span><br />
-  <span style="font-size: 9pt;">must have a value of post. (You</span><br />
-  <span style="font-size: 9pt;">cannot send files using the HTTP</span><br />
-  <span style="font-size: 9pt;">get method.)</span><br />
-  <span style="font-size: 9pt;">When a user clicks on the</span><br />
-  <span style="font-size: 9pt;">browse button, the presentation</span><br />
-  <span style="font-size: 9pt;">of the window that allows</span><br />
-  <span style="font-size: 9pt;">them to browse for the file they</span><br />
-  <span style="font-size: 9pt;">want to upload will match the</span><br />
-  <span style="font-size: 9pt;">windows of the user's operating</span><br />
-  <span style="font-size: 9pt;">system. You cannot control the</span><br />
-  <span style="font-size: 9pt;">appearance of these windows.</span>
-</p>
+    <h3>multiple</h3>
+    <p>
+      You can allow users to select<br />
+      multiple options from this list by<br />
+      adding the multiple attribute<br />
+      with a value of multiple.
+    </p>
+    <h6>
+      It is a good idea to tell users if<br />
+      they can select more than one<br />
+      option at a time. It is also helpful<br />
+      to indicate that on a PC they<br />
+      should hold down the control key<br />
+      while selecting multiple options<br />
+      and on a Mac they should use<br />
+      the command key while selecting<br />
+      options.
+    </h6>
 
 <hr>
 <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
-<!-- page 160 -->
-
-<h1>SUBMIT BUTTON</h1>
-<h2>< input ></h2>
-<h3>type="submit"</h3>
-<p>
-  The submit button is used to<br />
-  send a form to the server.
-</p>
-<h3>name</h3>
-<p>
-  It can use a name attribute but it<br />
-  does not need to have one.
-</p>
-<h3>value</h3>
-<p>
-  The value attribute is used to<br />
-  control the text that appears<br />
-  on a button. It is a good idea to<br />
-  specify the words you want to<br />
-  appear on a button because the<br />
-  default value of buttons on some<br />
-  browsers is < Submit query > and<br />
-  this might not be appropriate for<br />
-  all kinds of form.
-</p>
-<p>
-  <span style="font-size: 9pt;">Different browsers will show</span><br />
-  <span style="font-size: 9pt;">submit buttons in different</span><br />
-  <span style="font-size: 9pt;">ways and tend to fit the visual</span><br />
-  <span style="font-size: 9pt;">presentation of the browser.</span><br />
-  <span style="font-size: 9pt;">If you want to control the</span><br />
-  <span style="font-size: 9pt;">appearance of a submit button,</span><br />
-  <span style="font-size: 9pt;">you can either use CSS (as you</span><br />
-  <span style="font-size: 9pt;">will learn on page 343), or you</span><br />
-  <span style="font-size: 9pt;">can use an image for the button.</span>
-</p>
+    <h1>File Input Box</h1>
+    <h2>< input ></h2>
+    <p>
+      If you want to allow users to<br />
+      upload a file (for example an<br />
+      image, video, mp3, or a PDF),<br />
+      you will need to use a file input<br />
+      box.
+    </p>
+    <h3>type="file"</h3>
+    <p>
+      This type of input creates a<br />
+      box that looks like a text input<br />
+      followed by a browse button.<br />
+      When the user clicks on the<br />
+      browse button, a window opens<br />
+      up that allows them to select a<br />
+      file from their computer to be<br />
+      uploaded to the website.
+    </p>
+    <p><span style="font-size: 9pt;">When you are allowing users</span><br />
+      <span style="font-size: 9pt;">to upload files, the method</span><br />
+      <span style="font-size: 9pt;">attribute on the < form > element</span><br />
+      <span style="font-size: 9pt;">must have a value of post. (You</span><br />
+      <span style="font-size: 9pt;">cannot send files using the HTTP</span><br />
+      <span style="font-size: 9pt;">get method.)</span><br />
+      <span style="font-size: 9pt;">When a user clicks on the</span><br />
+      <span style="font-size: 9pt;">browse button, the presentation</span><br />
+      <span style="font-size: 9pt;">of the window that allows</span><br />
+      <span style="font-size: 9pt;">them to browse for the file they</span><br />
+      <span style="font-size: 9pt;">want to upload will match the</span><br />
+      <span style="font-size: 9pt;">windows of the user's operating</span><br />
+      <span style="font-size: 9pt;">system. You cannot control the</span><br />
+      <span style="font-size: 9pt;">appearance of these windows.</span>
+    </p>
 
 <hr>
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+    <h1>SUBMIT BUTTON</h1>
+    <h2>< input ></h2>
+    <h3>type="submit"</h3>
+    <p>
+      The submit button is used to<br />
+      send a form to the server.
+    </p>
+    <h3>name</h3>
+    <p>
+      It can use a name attribute but it<br />
+      does not need to have one.
+    </p>
+    <h3>value</h3>
+    <p>
+      The value attribute is used to<br />
+      control the text that appears<br />
+      on a button. It is a good idea to<br />
+      specify the words you want to<br />
+      appear on a button because the<br />
+      default value of buttons on some<br />
+      browsers is < Submit query > and<br />
+      this might not be appropriate for<br />
+      all kinds of form.
+    </p>
+    <p>
+      <span style="font-size: 9pt;">Different browsers will show</span><br />
+      <span style="font-size: 9pt;">submit buttons in different</span><br />
+      <span style="font-size: 9pt;">ways and tend to fit the visual</span><br />
+      <span style="font-size: 9pt;">presentation of the browser.</span><br />
+      <span style="font-size: 9pt;">If you want to control the</span><br />
+      <span style="font-size: 9pt;">appearance of a submit button,</span><br />
+      <span style="font-size: 9pt;">you can either use CSS (as you</span><br />
+      <span style="font-size: 9pt;">will learn on page 343), or you</span><br />
+      <span style="font-size: 9pt;">can use an image for the button.</span>
+    </p>
+
+<hr>
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+    <h1>IMAGE BUTTON</h1>
+    <h2>< input ></h2>
+    <h3>type="image"</h3>
+    <p>
+      If you want to use an image for<br />
+      the submit button, you can give<br />
+      the type attribute a value of<br />
+      image. The src, width, height,<br />
+      and alt attributes work just<br />
+      like they do when used with the<br />
+      < img > element (which we saw<br />
+      on pages 99-100).
+    </p>
+
+<hr>
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
 
 
 
