@@ -42,24 +42,130 @@
 <hr>
 <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
-<p><span style="font-size: 18pt;">THE EVOLUTION HTML</span></p>
-<p><span style="font-size: 13pt;">Since the web was first created, there have</span><br /><span style="font-size: 13pt;">been several different versions of HTML.</span></p>
-<p>____________________________________________________________</p>
-<p><span style="font-size: 14pt;">DOCTYPE</span></p>
-<p>Because there have been<br />several versions of HTML, each<br />web page should begin with a<br />DOCTYPE declaration to tell a<br />browser which version of HTML<br />the page is using (although<br />browsers usually display the<br />page even if it is not included).<br />We will therefore be including<br />one in each example for the rest<br />of the book.</p>
-<p><br />As you will see when we come to<br />look at CSS and its box model on<br />page 316, the use of a DOCTYPE<br />can also help the browser to<br />render a page correctly.</p>
-<p><br />Because XHTML was written<br />in XML, you will sometimes<br />see pages that use the XHTML<br />strict DOCTYPE start with<br />the optional XML declaration.<br />Where this is used, it should be<br />the first thing in a document.<br />There must be nothing before it,<br />not even a space.</p>
-<p>&nbsp;</p>
-<p>HTML5</p>
-<p><span style="font-size: 10pt;">&lt;!DOCTYPE html&gt;</span></p>
-<p>&nbsp;</p>
-<p>HTML4<br /><span style="font-size: 10pt;">&lt;!DOCTYPE html PUBLIC</span><br /><span style="font-size: 10pt;">"-//W3C//DTD HTML 4.01 Transitional//EN"</span><br /><span style="font-size: 10pt;">"http://www.w3.org/TR/html4/loose.dtd"&gt;</span></p>
-<p>&nbsp;</p>
-<p>Transitional XHTML 1.0<br /><span style="font-size: 10pt;">&lt;!DOCTYPE html PUBLIC</span><br /><span style="font-size: 10pt;">"-//W3C//DTD XHTML 1.0 Transitional//EN"</span><br /><span style="font-size: 10pt;">"http://www.w3.org/TR/xhtml1/DTD/</span><br /><span style="font-size: 10pt;">xhtml1-transitional.dtd"&gt;</span></p>
-<p>&nbsp;</p>
-<p>Strict XHTML 1.0<br /><span style="font-size: 10pt;">&lt;!DOCTYPE html PUBLIC</span><br /><span style="font-size: 10pt;">"-//W3C//DTD XHTML 1.0 Strict//EN"</span><br /><span style="font-size: 10pt;">"http://www.w3.org/TR/xhtml1/DTD/</span><br /><span style="font-size: 10pt;">xhtml1-strict.dtd"&gt;</span></p>
-<p>&nbsp;</p>
-<p>XML Declaration<br /><span style="font-size: 10pt;">&lt;?xml version="1.0" ?&gt;</span></p>
+    <p><span style="font-size: 18pt;">THE EVOLUTION HTML</span></p>
+    <p>
+      <span style="font-size: 13pt;">Since the web was first created, there have</span><br />
+      <span style="font-size: 13pt;">been several different versions of HTML.</span>
+    </p>
+    <p>____________________________________________________________</p>
+    <p>
+      <span style="font-size: 14pt;">DOCTYPE</span>
+    </p>
+    <p>
+      Because there have been<br />
+      several versions of HTML, each<br />
+      web page should begin with a<br />
+      DOCTYPE declaration to tell a<br />
+      browser which version of HTML<br />
+      the page is using (although<br />
+      browsers usually display the<br />
+      page even if it is not included).<br />
+      We will therefore be including<br />
+      one in each example for the rest<br />
+      of the book.
+    </p>
+    <p>
+      As you will see when we come to<br />
+      look at CSS and its box model on<br />
+      page 316, the use of a DOCTYPE<br />
+      can also help the browser to<br />
+      render a page correctly.
+    </p>
+    <p>
+      Because XHTML was written<br />
+      in XML, you will sometimes<br />
+      see pages that use the XHTML<br />
+      strict DOCTYPE start with<br />
+      the optional XML declaration.<br />
+      Where this is used, it should be<br />
+      the first thing in a document.<br />
+      There must be nothing before it,<br />
+      not even a space.
+    </p>
+    <p>&nbsp;</p>
+    <p>HTML5</p>
+    <p>
+      <span style="font-size: 10pt;">&lt;!DOCTYPE html&gt;</span></p>
+    <p>&nbsp;</p>
+    <p>
+      HTML4<br />
+      <span style="font-size: 10pt;">&lt;!DOCTYPE html PUBLIC</span><br />
+      <span style="font-size: 10pt;">"-//W3C//DTD HTML 4.01 Transitional//EN"</span><br />
+      <span style="font-size: 10pt;">"http://www.w3.org/TR/html4/loose.dtd"&gt;</span>
+    </p>
+    <p>&nbsp;</p>
+    <p>
+      Transitional XHTML 1.0<br />
+      <span style="font-size: 10pt;">&lt;!DOCTYPE html PUBLIC</span><br />
+      <span style="font-size: 10pt;">"-//W3C//DTD XHTML 1.0 Transitional//EN"</span><br />
+      <span style="font-size: 10pt;">"http://www.w3.org/TR/xhtml1/DTD/</span><br />
+      <span style="font-size: 10pt;">xhtml1-transitional.dtd"&gt;</span>
+    </p>
+    <br>
+    <p>
+      Strict XHTML 1.0<br />
+      <span style="font-size: 10pt;">&lt;!DOCTYPE html PUBLIC</span><br />
+      <span style="font-size: 10pt;">"-//W3C//DTD XHTML 1.0 Strict//EN"</span><br />
+      <span style="font-size: 10pt;">"http://www.w3.org/TR/xhtml1/DTD/</span><br />
+      <span style="font-size: 10pt;">xhtml1-strict.dtd"&gt;</span>
+    </p>
+    <br>
+    <p>
+      XML Declaration<br />
+      <span style="font-size: 10pt;">&lt;?xml version="1.0" ?&gt;</span>
+    </p>
+
+<hr>
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+<p>
+  <span style="font-size: 18pt;">COMMENTS IN HTML</span>
+</p>
+<h2>< !-- -- ></h2>
+<p>
+  If you want to add a comment<br />
+  to your code that will not be<br />
+  visible in the user's browser, you<br />
+  can add the text between these<br />
+  characters:
+</p>
+<p>
+  <! -- comment goes here -- >
+</p>
+<p>
+  It is a good idea to add<br />
+  comments to your code because,<br />
+  no matter how familiar you<br />
+  are with the page at the time<br />
+  of writing it, when you come<br />
+  back to it later (or if someone<br />
+  else needs to look at the code),<br />
+  comments will make it much<br />
+  easier to understand.
+</p>
+<p>
+  Although comments are not<br />
+  visible to users in the main<br />
+  browser window, they can be<br />
+  viewed by anyone who looks at<br />
+  the source code behind the page.
+</p>
+<p>
+  On a long page you will often<br />
+  see comments used to indicate<br />
+  where sections of the page start<br />
+  or end, and to pass on notes to<br />
+  help anyone who is looking at<br />
+  the code understand it.
+</p>
+<p>
+  Comments can also be used<br />
+  around blocks of code to stop<br />
+  that code from being displayed<br />
+  in the browser. In the example on<br />
+  the left, the email link has been<br />
+  commented out.
+</p>
 
   </body>
 </html>
