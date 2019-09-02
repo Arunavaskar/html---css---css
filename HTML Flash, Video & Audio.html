@@ -118,5 +118,123 @@
     <p><br />The .swf file is included in your<br />
       web page using JavaScript.
     </p>
+
+<hr>
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <p>
+      <span style="font-size: 18pt;">ADDING A FLASH MOVIE </span></p>
+    <p>
+      <span style="font-size: 18pt;">TO YOUR WEB PAGE</span></p>
+    <p>
+      <span style="font-size: 11pt;">The most popular way of<br />adding Flash into a web page<br />is using JavaScript. There are<br />several scripts that allow you<br />to do this without an in-depth<br />understanding of the JavaScript<br />language.</span></p>
+    <p>
+      <span style="font-size: 11pt;"><br />The script we will be looking at<br />here is called SWFObject. You<br />can obtain a copy of it for free<br />from Google, and you can see<br />how we use it on the next page.</span></p>
+    <p>
+      <span style="font-size: 11pt;"><br />
+        One advantage to using this<br />
+        technique is that it allows<br />
+        browsers to show alternative<br />
+        content for users whose<br />
+        browsers are not capable of<br />
+        showing Flash.</span>
+      </p>
+    <p>
+      <span style="font-size: 11pt;"><br />
+        This technique uses a &lt;div&gt;<br />
+        element to create a space where<br />
+        the Flash movie should sit.<br />
+        The &lt;div&gt; element has an id<br />
+        attribute whose value is used<br />
+        by the SWFObject script. In this<br />
+        example, the value of the id<br />
+        attribute is bird.</span>
+      </p>
+    <p>
+      <span style="font-size: 11pt;"><br />
+        Inside the &lt;div&gt; element you<br />
+        can place the alternative content<br />
+        for users who are not able to<br />
+        play Flash.</span>
+      </p>
+    <p>
+      <span style="font-size: 11pt;"><br />
+        Adding a Flash Movie<br />
+        to Your Web Page<br />The SWFObject script will check<br />to see if the user's browser can<br />play the Flash movie. If it can, the<br />script will replace the content of<br />the &lt;div&gt; with the .swf file.</span></p>
+    <p>
+      <span style="font-size: 11pt;"><br />
+        For users who cannot see the<br />Flash movie, you could show a<br />still from the movie instead. You<br />might also like to consider using<br />a text description of the Flash<br />file.</span></p>
+    <p>
+      <span style="font-size: 11pt;"><br />
+        If you use a text description as<br />alternative content, then you can<br />achieve two further benefits:</span></p>
+    <ol>
+      <li><span style="font-size: 11pt;">The text can be accessed by<br />
+        those with visual and/or physical<br />
+        impairments who are not able to<br />
+        interact with the Flash file.</span>
+      </li>
+      <li><span style="font-size: 11pt;">The text can be indexed by<br />
+        search engines (which are not as<br />
+        effective at indexing SWF files),<br />
+        increasing the chance that your<br />
+        content will be found.</span>
+      </li>
+    </ol>
+    <p>&nbsp;</p>
+    <p>
+      <span style="font-size: 11pt;">In this example, the SWFObject<br />
+        script is hosted on Google's<br />
+        servers. We <strong>include</strong> the script in<br />
+        this web page using the first of<br />
+        the two &lt;script&gt; elements.</span>
+      </p>
+    <p>
+      <span style="font-size: 11pt;"><br />
+        The type attribute is used on the<br />
+        &lt;script&gt; element to indicate<br />
+        that the script inside is written<br />
+        in JavaScript. The src attribute<br />
+        tells the browser where to find<br />
+        the script.</span>
+      </p>
+    <p>
+      <span style="font-size: 11pt;"><br />
+        The second &lt;script&gt; element<br />
+        is used to tell the browser about<br />
+        the Flash movie, as well as which<br />
+        element it should replace. This<br />
+        element is actually telling the<br />
+        SWFObject script <strong>five</strong> pieces<br />
+        of information, which are in the<br />
+        brackets:</span>
+      </p>
+    <ol>
+        <li>
+          <span style="font-size: 11pt;">The <strong>location</strong> of the <strong>.swf</strong> file:<br />
+            flash/bird.swf</span>
+          </li>
+        <li>
+          <span style="font-size: 11pt;">The element that the Flash<br />
+            movie should <strong>replace</strong>, specified<br />
+            by the value of the id attribute<br />
+            on the &lt;div&gt; element:<br />
+            bird</span>
+          </li>
+        <li>
+          <span style="font-size: 11pt;">The <strong>width</strong> of the Flash movie:<br />
+            400 px</span>
+          </li>
+        <li>
+          <span style="font-size: 11pt;">The <strong>height</strong> of the Flash movie:<br />
+            300 px</span>
+          </li>
+        <li>
+          <span style="font-size: 11pt;">The minimum <strong>version</strong> of the<br />
+            Flash player needed to view the<br />
+            movie:<br />
+            Flash Player 8<br />
+          </span>
+        </li>
+    </ol>
   </body>
 </html>
