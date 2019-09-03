@@ -530,5 +530,65 @@
       duration.
     </p>
 
+<hr>
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <h2>HTML5: MULTIPLE VIDEO</h2>
+    <h2>SOURCES</h2>
+    <h3>&lt;source&gt;</h3>
+    <p>
+      To specify the location of the file<br />
+      to be played, you can use the<br />
+      &lt;source&gt; element inside the<br />
+      &lt;video&gt; element. (This should<br />
+      replace the src attribute on the<br />
+      opening &lt;video&gt; tag.)
+    </p>
+    <p>
+      You can also use multiple<br />
+      &lt;source&gt; elements to specify<br />
+      that the video is available in<br />
+      different formats.
+    </p>
+    <p>
+      (Due to a bug on the iPad, you<br />
+      should provide the MP4 video<br />
+      as the first format. Otherwise, it<br />
+      might not play.)
+    </p>
+    <h4>src</h4>
+    <p>
+      This attribute specifies the path<br />
+      to the video.
+    </p>
+    <h4>type</h4>
+    <p>
+      You should use this attribute<br />
+      to tell the browser what format<br />
+      the video is. Otherwise, it will<br />
+      download some of the video to<br />
+      see if it can play the file (which<br />
+      will take time and bandwidth).
+    </p>
+    <h4>codecs</h4>
+    <p>
+      The codec that was used to<br />
+      encode the video is supplied<br />
+      within the type attribute. Note<br />
+      the use of single quotes, as well<br />
+      as double quotes in the type<br />
+      attribute, when it is supplied.
+    </p>
+    <p>If the browser does not support<br />
+      the &lt;video&gt; element or the<br />
+      format of video used, it will<br />
+      display whatever is between the<br />
+      opening &lt;video&gt; and closing<br />
+      &lt;/video&gt; tags.
+    </p>
+
+<hr>
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
   </body>
 </html>
