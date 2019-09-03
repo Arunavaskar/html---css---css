@@ -660,5 +660,18 @@
 <p><br />The &lt;source&gt; element uses the<br />src attribute to indicate where<br />the audio file is located.</p>
 <h3><br />type</h3>
 <p><br />At the time of writing, the type<br />attribute was not commonly<br />being used on the &lt;source&gt;<br />element in the same way it was<br />for the &lt;video&gt; element.</p>
+
+
+
+<h1>EXAMPLE</h1>
+<h3>FLASH, VIDEO &amp; AUDIO</h3>
+<p>T<span style="font-size: 15pt;">his example uses HTML5 to show a video.</span></p>
+<p><br />The video has been encoded in H264 and WebM formats to reach as<br />many browsers as possible. A Flash player has been added to the page<br />for browsers that do not support HTML5 video. The Flash player is<br />embedded using SWFObject. If the browser does not support HTML5<br />video or Flash, then a plain text message will be shown to the user.</p>
+<p><span style="font-size: 24pt;">"</span></p>
+<p><span style="font-size: 11pt;">&lt;!DOCTYPE html&gt;<br />&lt;html&gt;<br />&lt;head&gt;<br />&lt;title&gt;Flash, Video and Audio&lt;/title&gt;<br />&lt;script type="text/javascript"<br />src="http://ajax.googleapis.com/ajax/libs/<br />swfobject/2.2/swfobject.js"&gt;&lt;/script&gt;<br />&lt;script type="text/javascript"&gt;<br />var flashvars = {};<br />var params = {movie: "../video/puppy.flv"};<br />swfobject.embedSWF("flash/osplayer.swf", "snow",<br />"400", "320", "8.0.0", flashvars, params);&lt;/script&gt;<br />&lt;/head&gt;<br />&lt;body&gt;<br />&lt;video poster="images/puppy.jpg" width="400"<br />height="320" controls="controls"&gt;<br />&lt;source src="video/puppy.mp4" type='video/mp4;<br />codecs="avc1.42E01E, mp4a.40.2"' /&gt;<br />&lt;source src="video/puppy.webm" type='video/webm;<br />codecs="vp8, vorbis"' /&gt;<br />&lt;div id="snow"&gt;<br />&lt;p&gt;You cannot see this video of a puppy playing<br />in the snow because this browser does not<br />support our video formats.&lt;/p&gt;<br />&lt;/div&gt;<br />&lt;/video&gt;<br />&lt;/body&gt;<br />&lt;/html&gt;</span></p>
+<p><span style="font-size: 24pt;">"</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
   </body>
 </html>
