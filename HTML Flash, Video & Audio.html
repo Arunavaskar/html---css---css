@@ -612,84 +612,99 @@
 <li><span style="font-size: 11pt;">Tell different parts of a page<br />to change when the video<br />reaches a certain point</span></li>
 </ul>
 
+<hr>
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
-<p><span style="font-size: 18pt;">Adding Audio to</span><br /><span style="font-size: 18pt;">Web Pages</span></p>
-<p><span style="font-size: 13pt;">By far the most popular format for putting</span><br /><span style="font-size: 13pt;">audio on web pages is MP3. As with video,</span><br /><span style="font-size: 13pt;">there are three routes commonly taken:</span></p>
-<p><span style="font-size: 18pt;">1</span><br /><span style="font-size: 14pt;">Use a Hosted Service</span></p>
-<p>There are several sites that allow<br />you to upload your audio, and<br />provide a player which you can<br />embed in your page, such as<br />SoundCloud.com and<br />MySpace.com.</p>
-<p><span style="font-size: 18pt;">2</span><br /><span style="font-size: 14pt;">Use Flash</span></p>
-<p>There are several Flash movies<br />that allow you to play MP3 files;<br />from simple buttons that play<br />one track to complex players<br />that allow you to create playlists<br />and juke boxes.</p>
-<p><span style="font-size: 18pt;">3</span><br /><span style="font-size: 14pt;">Use HTML 5</span></p>
-<p>HTML5 has introduced a new<br />&lt;audio&gt; element. Browsers that<br />support this element provide<br />their own controls &mdash; much as<br />they do for the video files we just<br />looked at.</p>
-<p>Some people ask how to get<br />music to play consistently even<br />when visitors move from one<br />page to another on a website.</p>
-<p>This is actually quite difficult<br />to achieve and would rely on<br />techniques like using AJAX to<br />load page content or developing<br />the entire site in Flash.</p>
-<p>This is why some sites offer<br />audio players in new windows,<br />so that listeners are not<br />interrupted when they move<br />between pages.</p>
+<p>
+  <span style="font-size: 18pt;">Adding Audio to</span><br /><span style="font-size: 18pt;">Web Pages</span></p>
+<p>
+  <span style="font-size: 13pt;">By far the most popular format for putting</span><br /><span style="font-size: 13pt;">audio on web pages is MP3. As with video,</span><br /><span style="font-size: 13pt;">there are three routes commonly taken:</span></p>
+<p>
+  <span style="font-size: 18pt;">1</span><br /><span style="font-size: 14pt;">Use a Hosted Service</span></p>
+<p>
+  There are several sites that allow<br />you to upload your audio, and<br />provide a player which you can<br />embed in your page, such as<br />SoundCloud.com and<br />MySpace.com.</p>
+<p>
+  <span style="font-size: 18pt;">2</span><br /><span style="font-size: 14pt;">Use Flash</span></p>
+<p>
+  There are several Flash movies<br />that allow you to play MP3 files;<br />from simple buttons that play<br />one track to complex players<br />that allow you to create playlists<br />and juke boxes.</p>
+<p>
+  <span style="font-size: 18pt;">3</span><br /><span style="font-size: 14pt;">Use HTML 5</span></p>
+<p>
+  HTML5 has introduced a new<br />&lt;audio&gt; element. Browsers that<br />support this element provide<br />their own controls &mdash; much as<br />they do for the video files we just<br />looked at.</p>
+<p>
+  Some people ask how to get<br />music to play consistently even<br />when visitors move from one<br />page to another on a website.</p>
+<p>
+  This is actually quite difficult<br />to achieve and would rely on<br />techniques like using AJAX to<br />load page content or developing<br />the entire site in Flash.</p>
+<p>
+  This is why some sites offer<br />audio players in new windows,<br />so that listeners are not<br />interrupted when they move<br />between pages.</p>
 
+<hr>
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
-<h1>HTML5: ADDING HTML5</h1>
-<h1>AUDIO TO YOUR PAGES</h1>
-<h2>&lt;audio&gt;</h2>
-<p>
-  html5-audio.html HTML<br />
-  HTML5 introduced the &lt;audio&gt;<br />
-  element to include audio files<br />
-  in your pages. As with HTML5<br />
-  video, browsers expect different<br />
-  formats for the audio.
-</p>
-<p>
-  The &lt;audio&gt; element has a<br />
-  number of attributes which allow<br />
-  you to control audio playback:
-</p>
-<h3>src</h3>
-<p>
-  This attribute specifies the path<br />
-  to the audio file.
-</p>
-<h3>controls</h3>
-<p>
-  This attribute indicates whether<br />
-  the player should display<br />
-  controls. If you do not use this<br />
-  attribute, no controls will be<br />
-  shown by default. You can also<br />
-  specify your own controls using<br />
-  JavaScript.
-</p>
-<h3>autoplay</h3>
-<p>
-  The presence of this attribute<br />
-  indicates that the audio should<br />
-  start playing automatically. (It is<br />
-  considered better practice to let<br />
-  visitors choose to play audio.)
-</p>
-<h3>preload</h3>
-<p>
-  This attribute indicates what the<br />
-  browser should do if the player is<br />
-  not set to autoplay. It can have<br />
-  the same values we saw on page<br />
-  214 for the &lt;video&gt; element.
-</p>
-<h3>loop</h3>
-<p>
-  This attribute specifies that the<br />
-  audio track should play again<br />
-  once it has finished.
-</p>
-<p>
-  This example only works in<br />
-  browsers that support the Ogg<br />
-  Vorbis audio format (Firefox,<br />
-  Chrome, and Opera). For it to<br />
-  work in Safari 5 and IE 9, the<br />
-  audio would need to be in MP3<br />
-  format (or use the &lt;source&gt;<br />
-  element covered on the next<br />
-  page to offer different formats).
-</p>
+    <h1>HTML5: ADDING HTML5</h1>
+    <h1>AUDIO TO YOUR PAGES</h1>
+    <h2>&lt;audio&gt;</h2>
+    <p>
+      html5-audio.html HTML<br />
+      HTML5 introduced the &lt;audio&gt;<br />
+      element to include audio files<br />
+      in your pages. As with HTML5<br />
+      video, browsers expect different<br />
+      formats for the audio.
+    </p>
+    <p>
+      The &lt;audio&gt; element has a<br />
+      number of attributes which allow<br />
+      you to control audio playback:
+    </p>
+    <h3>src</h3>
+    <p>
+      This attribute specifies the path<br />
+      to the audio file.
+    </p>
+    <h3>controls</h3>
+    <p>
+      This attribute indicates whether<br />
+      the player should display<br />
+      controls. If you do not use this<br />
+      attribute, no controls will be<br />
+      shown by default. You can also<br />
+      specify your own controls using<br />
+      JavaScript.
+    </p>
+    <h3>autoplay</h3>
+    <p>
+      The presence of this attribute<br />
+      indicates that the audio should<br />
+      start playing automatically. (It is<br />
+      considered better practice to let<br />
+      visitors choose to play audio.)
+    </p>
+    <h3>preload</h3>
+    <p>
+      This attribute indicates what the<br />
+      browser should do if the player is<br />
+      not set to autoplay. It can have<br />
+      the same values we saw on page<br />
+      214 for the &lt;video&gt; element.
+    </p>
+    <h3>loop</h3>
+    <p>
+      This attribute specifies that the<br />
+      audio track should play again<br />
+      once it has finished.
+    </p>
+    <p>
+      This example only works in<br />
+      browsers that support the Ogg<br />
+      Vorbis audio format (Firefox,<br />
+      Chrome, and Opera). For it to<br />
+      work in Safari 5 and IE 9, the<br />
+      audio would need to be in MP3<br />
+      format (or use the &lt;source&gt;<br />
+      element covered on the next<br />
+      page to offer different formats).
+    </p>
 
 <hr>
 <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
