@@ -615,63 +615,188 @@
 
 <p><span style="font-size: 18pt;">Adding Audio to</span><br /><span style="font-size: 18pt;">Web Pages</span></p>
 <p><span style="font-size: 13pt;">By far the most popular format for putting</span><br /><span style="font-size: 13pt;">audio on web pages is MP3. As with video,</span><br /><span style="font-size: 13pt;">there are three routes commonly taken:</span></p>
-<p><br /><span style="font-size: 18pt;">1</span><br /><span style="font-size: 14pt;">Use a Hosted Service</span></p>
-<p><br />There are several sites that allow<br />you to upload your audio, and<br />provide a player which you can<br />embed in your page, such as<br />SoundCloud.com and<br />MySpace.com.</p>
-<p><br /><span style="font-size: 18pt;">2</span><br /><span style="font-size: 14pt;">Use Flash</span></p>
-<p><br />There are several Flash movies<br />that allow you to play MP3 files;<br />from simple buttons that play<br />one track to complex players<br />that allow you to create playlists<br />and juke boxes.</p>
-<p><br /><span style="font-size: 18pt;">3</span><br /><span style="font-size: 14pt;">Use HTML 5</span></p>
-<p><br />HTML5 has introduced a new<br />&lt;audio&gt; element. Browsers that<br />support this element provide<br />their own controls &mdash; much as<br />they do for the video files we just<br />looked at.</p>
-<p><br />Some people ask how to get<br />music to play consistently even<br />when visitors move from one<br />page to another on a website.</p>
-<p><br />This is actually quite difficult<br />to achieve and would rely on<br />techniques like using AJAX to<br />load page content or developing<br />the entire site in Flash.</p>
-<p><br />This is why some sites offer<br />audio players in new windows,<br />so that listeners are not<br />interrupted when they move<br />between pages.</p>
+<p><span style="font-size: 18pt;">1</span><br /><span style="font-size: 14pt;">Use a Hosted Service</span></p>
+<p>There are several sites that allow<br />you to upload your audio, and<br />provide a player which you can<br />embed in your page, such as<br />SoundCloud.com and<br />MySpace.com.</p>
+<p><span style="font-size: 18pt;">2</span><br /><span style="font-size: 14pt;">Use Flash</span></p>
+<p>There are several Flash movies<br />that allow you to play MP3 files;<br />from simple buttons that play<br />one track to complex players<br />that allow you to create playlists<br />and juke boxes.</p>
+<p><span style="font-size: 18pt;">3</span><br /><span style="font-size: 14pt;">Use HTML 5</span></p>
+<p>HTML5 has introduced a new<br />&lt;audio&gt; element. Browsers that<br />support this element provide<br />their own controls &mdash; much as<br />they do for the video files we just<br />looked at.</p>
+<p>Some people ask how to get<br />music to play consistently even<br />when visitors move from one<br />page to another on a website.</p>
+<p>This is actually quite difficult<br />to achieve and would rely on<br />techniques like using AJAX to<br />load page content or developing<br />the entire site in Flash.</p>
+<p>This is why some sites offer<br />audio players in new windows,<br />so that listeners are not<br />interrupted when they move<br />between pages.</p>
 
 
 <h1>HTML5: ADDING HTML5</h1>
 <h1>AUDIO TO YOUR PAGES</h1>
-<p>&nbsp;</p>
 <h2>&lt;audio&gt;</h2>
-<p>html5-audio.html HTML<br />HTML5 introduced the &lt;audio&gt;<br />element to include audio files<br />in your pages. As with HTML5<br />video, browsers expect different<br />formats for the audio.</p>
-<p><br />The &lt;audio&gt; element has a<br />number of attributes which allow<br />you to control audio playback:</p>
-<h3><br />src</h3>
-<p><br />This attribute specifies the path<br />to the audio file.</p>
-<h3><br />controls</h3>
-<p><br />This attribute indicates whether<br />the player should display<br />controls. If you do not use this<br />attribute, no controls will be<br />shown by default. You can also<br />specify your own controls using<br />JavaScript.</p>
-<h3><br />autoplay</h3>
-<p><br />The presence of this attribute<br />indicates that the audio should<br />start playing automatically. (It is<br />considered better practice to let<br />visitors choose to play audio.)</p>
-<h3>preload</h3>
-<p><br />This attribute indicates what the<br />browser should do if the player is<br />not set to autoplay. It can have<br />the same values we saw on page<br />214 for the &lt;video&gt; element.</p>
-<h3><br />loop</h3>
-<p><br />This attribute specifies that the<br />audio track should play again<br />once it has finished.</p>
-<p><br />This example only works in<br />browsers that support the Ogg<br />Vorbis audio format (Firefox,<br />Chrome, and Opera). For it to<br />work in Safari 5 and IE 9, the<br />audio would need to be in MP3<br />format (or use the &lt;source&gt;<br />element covered on the next<br />page to offer different formats).</p>
-
-
-
-<h1>HTML5: MULTIPLE AUDIO&nbsp;</h1>
-<h1>SOURCES</h1>
-<h2>&lt;source&gt;</h2>
-<p><br />It is possible to specify more<br />than one audio file using the<br />&lt;source&gt; element between the<br />opening &lt;audio&gt; and closing<br />&lt;/audio&gt; tags (instead of the<br />src attribute on the opening<br />&lt;audio&gt; tag).</p>
-<p><br />This is important because<br />different browsers support<br />different formats for audio files.</p>
-<p><br /><strong>MP3</strong>: Safari 5+, Chrome 6+, IE9</p>
-<p>&nbsp;</p>
-<p><br /><strong>Ogg Vorbis</strong>: Firefox 3.6, Chome<br />6, Opera 1.5, IE9</p>
-<p><br />So you would need to supply two<br />audio formats to get coverage<br />across all recent browsers that<br />support the &lt;audio&gt; element.<br />You could also provide a Flash<br />alternative for older browsers<br />that do not support the &lt;audio&gt;<br />element.</p>
-<p><br />The HTML5 &lt;audio&gt; tag has<br />not gained as widespread<br />adoption as the &lt;video&gt; tag,<br />and there have been some issues<br />with audio quality in the first<br />browsers to implement it.</p>
+<p>
+  html5-audio.html HTML<br />
+  HTML5 introduced the &lt;audio&gt;<br />
+  element to include audio files<br />
+  in your pages. As with HTML5<br />
+  video, browsers expect different<br />
+  formats for the audio.
+</p>
+<p>
+  The &lt;audio&gt; element has a<br />
+  number of attributes which allow<br />
+  you to control audio playback:
+</p>
 <h3>src</h3>
-<p><br />The &lt;source&gt; element uses the<br />src attribute to indicate where<br />the audio file is located.</p>
-<h3><br />type</h3>
-<p><br />At the time of writing, the type<br />attribute was not commonly<br />being used on the &lt;source&gt;<br />element in the same way it was<br />for the &lt;video&gt; element.</p>
+<p>
+  This attribute specifies the path<br />
+  to the audio file.
+</p>
+<h3>controls</h3>
+<p>
+  This attribute indicates whether<br />
+  the player should display<br />
+  controls. If you do not use this<br />
+  attribute, no controls will be<br />
+  shown by default. You can also<br />
+  specify your own controls using<br />
+  JavaScript.
+</p>
+<h3>autoplay</h3>
+<p>
+  The presence of this attribute<br />
+  indicates that the audio should<br />
+  start playing automatically. (It is<br />
+  considered better practice to let<br />
+  visitors choose to play audio.)
+</p>
+<h3>preload</h3>
+<p>
+  This attribute indicates what the<br />
+  browser should do if the player is<br />
+  not set to autoplay. It can have<br />
+  the same values we saw on page<br />
+  214 for the &lt;video&gt; element.
+</p>
+<h3>loop</h3>
+<p>
+  This attribute specifies that the<br />
+  audio track should play again<br />
+  once it has finished.
+</p>
+<p>
+  This example only works in<br />
+  browsers that support the Ogg<br />
+  Vorbis audio format (Firefox,<br />
+  Chrome, and Opera). For it to<br />
+  work in Safari 5 and IE 9, the<br />
+  audio would need to be in MP3<br />
+  format (or use the &lt;source&gt;<br />
+  element covered on the next<br />
+  page to offer different formats).
+</p>
+
+<hr>
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
 
+    <h1>HTML5: MULTIPLE AUDIO&nbsp;</h1>
+    <h1>SOURCES</h1>
+    <h2>&lt;source&gt;</h2>
+    <p>
+      It is possible to specify more<br />
+      than one audio file using the<br />
+      &lt;source&gt; element between the<br />
+      opening &lt;audio&gt; and closing<br />
+      &lt;/audio&gt; tags (instead of the<br />
+      src attribute on the opening<br />
+      &lt;audio&gt; tag).
+    </p>
+    <p>
+      This is important because<br />
+      different browsers support<br />
+      different formats for audio files.
+    </p>
+    <p><strong>MP3</strong>: Safari 5+, Chrome 6+, IE9</p>
+    <p>
+      <strong>Ogg Vorbis</strong>: Firefox 3.6, Chome<br />
+      6, Opera 1.5, IE9
+    </p>
+    <p>
+      So you would need to supply two<br />
+      audio formats to get coverage<br />
+      across all recent browsers that<br />
+      support the &lt;audio&gt; element.<br />
+      You could also provide a Flash<br />
+      alternative for older browsers<br />
+      that do not support the &lt;audio&gt;<br />
+      element.
+    </p>
+    <p>
+      The HTML5 &lt;audio&gt; tag has<br />
+      not gained as widespread<br />
+      adoption as the &lt;video&gt; tag,<br />
+      and there have been some issues<br />
+      with audio quality in the first<br />
+      browsers to implement it.
+    </p>
+    <h3>src</h3>
+    <p>
+      The &lt;source&gt; element uses the<br />
+      src attribute to indicate where<br />
+      the audio file is located.
+    </p>
+    <h3>type</h3>
+    <p>
+      At the time of writing, the type<br />
+      attribute was not commonly<br />
+      being used on the &lt;source&gt;<br />
+      element in the same way it was<br />
+      for the &lt;video&gt; element.
+    </p>
 
-<h1>EXAMPLE</h1>
-<h3>FLASH, VIDEO &amp; AUDIO</h3>
-<p>T<span style="font-size: 15pt;">his example uses HTML5 to show a video.</span></p>
-<p><br />The video has been encoded in H264 and WebM formats to reach as<br />many browsers as possible. A Flash player has been added to the page<br />for browsers that do not support HTML5 video. The Flash player is<br />embedded using SWFObject. If the browser does not support HTML5<br />video or Flash, then a plain text message will be shown to the user.</p>
-<p><span style="font-size: 24pt;">"</span></p>
-<p><span style="font-size: 11pt;">&lt;!DOCTYPE html&gt;<br />&lt;html&gt;<br />&lt;head&gt;<br />&lt;title&gt;Flash, Video and Audio&lt;/title&gt;<br />&lt;script type="text/javascript"<br />src="http://ajax.googleapis.com/ajax/libs/<br />swfobject/2.2/swfobject.js"&gt;&lt;/script&gt;<br />&lt;script type="text/javascript"&gt;<br />var flashvars = {};<br />var params = {movie: "../video/puppy.flv"};<br />swfobject.embedSWF("flash/osplayer.swf", "snow",<br />"400", "320", "8.0.0", flashvars, params);&lt;/script&gt;<br />&lt;/head&gt;<br />&lt;body&gt;<br />&lt;video poster="images/puppy.jpg" width="400"<br />height="320" controls="controls"&gt;<br />&lt;source src="video/puppy.mp4" type='video/mp4;<br />codecs="avc1.42E01E, mp4a.40.2"' /&gt;<br />&lt;source src="video/puppy.webm" type='video/webm;<br />codecs="vp8, vorbis"' /&gt;<br />&lt;div id="snow"&gt;<br />&lt;p&gt;You cannot see this video of a puppy playing<br />in the snow because this browser does not<br />support our video formats.&lt;/p&gt;<br />&lt;/div&gt;<br />&lt;/video&gt;<br />&lt;/body&gt;<br />&lt;/html&gt;</span></p>
-<p><span style="font-size: 24pt;">"</span></p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+<hr>
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+    <h1>EXAMPLE</h1>
+    <h3>FLASH, VIDEO &amp; AUDIO</h3>
+    <p><span style="font-size: 15pt;">This example uses HTML5 to show a video.</span></p>
+    <p>
+      The video has been encoded in H264 and WebM formats to reach as<br />
+      many browsers as possible. A Flash player has been added to the page<br />
+      for browsers that do not support HTML5 video. The Flash player is<br />
+      embedded using SWFObject. If the browser does not support HTML5<br />
+      video or Flash, then a plain text message will be shown to the user.
+    </p>
+    <p>
+      <span style="font-size: 24pt;">"</span></p>
+    <p>
+      <span style="font-size: 11pt;">&lt;!DOCTYPE html&gt;<br />
+        &lt;html&gt;<br />
+        &lt;head&gt;<br />
+        &lt;title&gt;Flash, Video and Audio&lt;/title&gt;<br />
+        &lt;script type="text/javascript"<br />
+        src="http://ajax.googleapis.com/ajax/libs/<br />
+        swfobject/2.2/swfobject.js"&gt;&lt;/script&gt;<br />
+        &lt;script type="text/javascript"&gt;<br />
+        var flashvars = {};<br />
+        var params = {movie: "../video/puppy.flv"};<br />
+        swfobject.embedSWF("flash/osplayer.swf", "snow",<br />
+        "400", "320", "8.0.0", flashvars, params);&lt;/script&gt;<br />
+        &lt;/head&gt;<br />
+        &lt;body&gt;<br />
+        &lt;video poster="images/puppy.jpg" width="400"<br />
+        height="320" controls="controls"&gt;<br />
+        &lt;source src="video/puppy.mp4" type='video/mp4;<br />
+        codecs="avc1.42E01E, mp4a.40.2"' /&gt;<br />
+        &lt;source src="video/puppy.webm" type='video/webm;<br />
+        codecs="vp8, vorbis"' /&gt;<br />
+        &lt;div id="snow"&gt;<br />
+        &lt;p&gt;You cannot see this video of a puppy playing<br />
+        in the snow because this browser does not<br />
+        support our video formats.&lt;/p&gt;<br />
+        &lt;/div&gt;<br />
+        &lt;/video&gt;<br />
+        &lt;/body&gt;<br />
+        &lt;/html&gt;</span>
+      </p>
+    <p><span style="font-size: 24pt;">"</span></p>
+
   </body>
 </html>
