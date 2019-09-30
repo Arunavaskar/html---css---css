@@ -5,10 +5,18 @@
        url('Nunito-Regular.ttf') format('truetype')
 }
 
+/* This is to remove all underlines from a(nchor) elements */
+a {
+    text-decoration: none !important;
+    color: inherit;
+}
+
+
 h1{
   font-family: 'Nunito-Regular';
   font-weight: lighter;
   font-size: 40px;
+  color: #707070;
 }
 
 .content
@@ -16,4 +24,10 @@ h1{
   font-family: 'Nunito-Regular';
   font-weight: lighter;
   font-size: 13px;
+  color: white;
+}
+
+
+body {
+  background-color: #382525;
 }
