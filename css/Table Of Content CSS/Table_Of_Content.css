@@ -1,10 +1,19 @@
 @font-face {
-  font-family: 'Abel';
-  src: url('Abel-Regular.woff2') format('woff2'),
-       url('Abel-Regular.woff') format('woff'),
-       url('Abel-Regular.ttf') format('truetype')
+  font-family: 'Nunito-Regular';
+  src: url('Nunito-Regular.woff2') format('woff2'),
+       url('Nunito-Regular.woff') format('woff'),
+       url('Nunito-Regular.ttf') format('truetype')
 }
 
-.class{
-  font-family: 'Abel';
+h1{
+  font-family: 'Nunito-Regular';
+  font-weight: lighter;
+  font-size: 40px;
+}
+
+.content
+{
+  font-family: 'Nunito-Regular';
+  font-weight: lighter;
+  font-size: 13px;
 }
