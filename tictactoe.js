@@ -24,8 +24,9 @@ cellOne.addEventListener("click", function(){
   // this will set the content to "O"
   }else if (cellOne.textContent === 'X') {
     cellOne.textContent = "O";
-  // if none of those are true then
-  // set the content to "" blank
+  // if it is neither "" nor "X"
+  // then it must be "O" and
+  // depending on that set the content to "" blank
   }else {
     cellOne.textContent = '';
   }
